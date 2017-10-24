@@ -7,11 +7,11 @@ def table_hard_copy(table):
         new.append(i)
     return new
 
-def create_anagrams_recursive(length,now,res):
-    tmp = table_hard_copy(now)
+def create_anagrams_recursive(length,curr,res):
+    tmp = table_hard_copy(curr)
     if len(tmp) == length:
-        print now
-        res.append(now)
+        print curr
+        res.append(curr)
     for i in range(length):
         zz = table_hard_copy(tmp)
         if i not in zz:
