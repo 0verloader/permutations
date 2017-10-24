@@ -21,9 +21,9 @@ The algorithm works recursively. It creates a recusion tree, that has a depth of
 				       /                    					        |                                                 		\
 				      /                     					        |                                                   		 \
 		           {length=3, curr=[0],res}                                         {length=3, curr=[1],res}                            		{length=3, curr=[2],res}
-	                    /                     \                                           /                     \                                              /             \
-			  1                       2                                         0                       2                                             0              1
-	                 /                         \                                       /                         \                                            /               \
+	                   /                     \                                            /                     \                                              /             \
+			  1                       2                                          0                       2                                            0              1
+	                 /                         \                                        /                         \                                           /               \
 	{length=3, curr=[0,1],res}         {length=3, curr=[0,2],res}        {length=3, curr=[1,0],res}         {length=3, curr=[1,2],res}     {length=3, curr=[2,0],res}  {length=3, curr=[2,1],res}
                   |                                |                                |                                |                                       |                         |
                   2                                1                                2                                0                                       1                         0
